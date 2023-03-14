@@ -1,0 +1,15 @@
+- Start recording a trace
+
+await Context.Tracing.StartAsync(new()
+{
+	Screenshots = true,
+	Snapshots = true,
+	Sources = true,
+});
+
+- Stop recording a trace
+
+await Context.Tracing.StopAsync(new()
+{ 
+	Path = "trace.zip",
+});

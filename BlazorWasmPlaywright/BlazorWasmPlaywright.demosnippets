@@ -1,0 +1,3 @@
+- Better counter text assertion
+
+await Expect(Page.GetByRole(AriaRole.Status)).ToHaveTextAsync("Current count: 1");
